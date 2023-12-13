@@ -1,247 +1,148 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/johnvardanyan/CtrlAltDelete">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">NinjaManager</h3>
+# CtrlAltDelete 
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/johnvardanyan/CtrlAltDelete"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/johnvardanyan/CtrlAltDelete">View Demo</a>
-    ·
-    <a href="https://github.com/johnvardanyan/CtrlAltDelete/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/johnvardanyan/CtrlAltDelete/issues">Request Feature</a>
-  </p>
+<a href="https://github.com/johnvardanyan/ctrlaltdelete">
+  <img src="logo.png" alt="Logo" style="display:block; margin:auto;">
+</a>
+
 </div>
 
+# Synopsis
+NinjaManager is a web-based task management application tailored for the administrative team at Code Ninjas, owned by Lego Haryanto. This tool is designed to efficiently handle day-to-day administrative tasks, including membership adjustments, customer request management, and task tracking.
+
+The application is built to integrate seamlessly with the existing Code Ninjas Dashboard, ensuring familiarity and ease of use for employees. Key functionalities include a straightforward task creation system, a comprehensive calendar view for tracking due dates, and a dynamic task status indicator to monitor progress, past due, or completed tasks.
+
+NinjaManager offers a clean, user-friendly interface with essential navigation options such as “Home”, “Create Task”, “Calendar”, “Overview”, and “History”. Each section provides specific functionalities - from displaying current tasks on the Home page to a detailed history of completed tasks. The task management process is streamlined, allowing for easy assignment of tasks to employees, setting priorities, and editing task details.
+
+With NinjaManager, the Code Ninjas administrative team can effectively track and manage tasks, ensuring timely responses and efficient operations. This application is a strategic step towards enhancing administrative efficiency, providing a simple yet powerful tool for day-to-day management.
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+<a href="https://github.com/johnvardanyan/ctrlaltdelete">
+  <img src="pic1.png" alt="Home" style="display:block; margin:auto; ">
+</a>
 
+<a href="https://github.com/johnvardanyan/ctrlaltdelete">
+  <img src="pic2.png" alt="Create" style="display:block; margin:auto;">
+</a>
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `johnvardanyan`, `CtrlAltDelete`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `NinjaManager`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+## Installation
 
 ### Prerequisites
+Make sure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/) (version 18.18.1)
+- [npm](https://www.npmjs.com/) (version 9.8.1)
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+### Backend Installation
 
-### Installation
+1. **Clone the Repository**
+2. **Install Backend Dependencies:**
+   - In the backend directory, run:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - Backend dependencies include:
+     - dotenv (version 16.3.1)
+     - express (version 4.18.1)
+     - mongodb (version 6.2.0)
+     - mongoose (version 7.6.3)
+     - update (version 15.0.4)
+     - nodemon (version 3.0.1) (installed globally)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/johnvardanyan/CtrlAltDelete.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. **Configuration:**
+	
+Database set-up:
+- Go to https://www.mongodb.com/atlas/database and create a free database using the following options: 
+	- Shared cluster (free) 
+	- Cloud Provider: AWS 
+	- Region: Any
+  
+- After creating the database, navigate to ‘Quickstart’ under the ‘Security’ section and create a user.
+- Next, navigate to ‘Network Access’ and add your IP address.
+  
+To get your URI that will be used in the next step, navigate to ‘Database’ under ‘Deployment’. Locate your database and click on ‘Connect’. A pop-up window will appear. In this pop-up window, select the ‘Drivers’ option. Your database’s URI should be visible now. Copy it as it will be used in the next step.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Environment set-up:
+- Create a `.env` file in the backend folder.
+- Add your environment variables to the `.env` file.
 
+  Example:
+  
+     	PORT=400
+     	MONGO_URI=mongodb+srv://<username>:<password>@mernapp.l0dhnve.mongodb.net/?retryWrites=true&w=majority
+      
+Replace `<username>` and `<password>` with your actual credentials.
 
+4. **Connect to Backend Server and Database:**
+   - In the terminal, change to the backend directory and run:
+     ```bash
+     npm run dev
+     ```
+### Frontend Installation
 
-<!-- USAGE EXAMPLES -->
-## Usage
+1. **Install Frontend Dependencies:**
+   - In the frontend directory, run:
+     ```bash
+     cd frontend
+     npm install
+     ```
+   - Frontend dependencies include:
+     - @testing-library/jest-dom (version 5.17.0)
+     - @testing-library/react (version 13.4.0)
+     - @testing-library/user-event (version 13.5.0)
+     - react (version 18.2.0)
+     - react-datepicker (version 4.21.0)
+     - react-dom (version 18.2.0)
+     - react-router-dom (version 6.17.0)
+     - web-vitals (version 2.1.4)
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+2. **Start the React Development Server:**
+- In a separate terminal, change to the frontend directory and run:
+     ```bash
+     npm start
+     ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/johnvardanyan/CtrlAltDelete/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/johnvardanyan/CtrlAltDelete](https://github.com/johnvardanyan/CtrlAltDelete)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+3. **App Startup:**
+   - The app should start up.
 
 
+# Deployment
+- Will be added in 191
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+# Testing
+- Will be added in 191
 
-* []()
-* []()
-* []()
+# Developer Instructions
+- Will be added in 191
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Timeline
 
+### Key Milestones:
 
+### What we expect to get done in 191
+- Add a profile/user database
+- Link profile with task
+- Add a "completed" button on the home page and connect to History page
+- Clean up CSS designs and make them consistent on each page
+- Add pop-up notifications on every page to make user experience clearer
+- Create a database for the employees
+- Create Login page and security
+- "Mark Complete" button functionality
+- Connect employee database with tasks database
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/johnvardanyan/CtrlAltDelete.svg?style=for-the-badge
-[contributors-url]: https://github.com/johnvardanyan/CtrlAltDelete/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/johnvardanyan/CtrlAltDelete.svg?style=for-the-badge
-[forks-url]: https://github.com/johnvardanyan/CtrlAltDelete/network/members
-[stars-shield]: https://img.shields.io/github/stars/johnvardanyan/CtrlAltDelete.svg?style=for-the-badge
-[stars-url]: https://github.com/johnvardanyan/CtrlAltDelete/stargazers
-[issues-shield]: https://img.shields.io/github/issues/johnvardanyan/CtrlAltDelete.svg?style=for-the-badge
-[issues-url]: https://github.com/johnvardanyan/CtrlAltDelete/issues
-[license-shield]: https://img.shields.io/github/license/johnvardanyan/CtrlAltDelete.svg?style=for-the-badge
-[license-url]: https://github.com/johnvardanyan/CtrlAltDelete/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+# Credits
+
+Meet the Team:
+- John Vardanyan | johnvardanyan@gmail.com | https://github.com/johnvardanyan | www.linkedin.com/in/nairy/
+- Elina Grigoryan | elina.grigoryan8@gmail.com | https://github.com/egrigoryan12 | www.linkedin.com/in/elina-grigoryan
+- Ashley Palencia – Wisniewski | ashleypalencia-wisn@csus.edu | https://github.com/AshleyPW | www.linkedin.com/in/ashleypalencia
+- Jeremy Vuong | jeremyvuong@csus.edu | https://github.com/JxRRRm | https://www.linkedin.com/in/jeremy-vuong-5a1158178/
+- Arjun Bhargava | abhargava@csus.edu | https://github.com/NightWolfz2
+- Navid Baghaei  |  Navid1.Baghaei@gmail.com | https://github.com/NavidBaghaei | https://www.linkedin.com/in/navid-baghaei-7346602a2/
+- Madusha Yakupitiyage | madushayaku@gmail.com | https://github.com/Madusha0909 | https://www.linkedin.com/in/madusha-yakupitiyage-99b202269/ 
+- Nikolay Chkhaylo  | nchkhaylo@gmail.com | https://github.com/NikolayChkhaylo 
+
+# License
+
+All rights are observed. This project is not open source.
